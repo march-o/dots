@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+
+while true
+do
+    # echo ""
+    out=$(cat ~/.hyprconfig/store/dynamic_out.txt)
+    echo "$out"  | jq --unbuffered --compact-output
+    # cat ~/.hyprconfig/scripts/tools/dynamic_out.txt
+    sleep 0.5
+done
