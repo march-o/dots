@@ -18,7 +18,7 @@
     ; :height "100%"
   :anchor "top left")
   :stacking "fg"
-  :monitor 1
+  :monitor 0
   (sidebar))
 
 (defwindow sidebar2
@@ -28,7 +28,7 @@
     ; :height "100%"
   :anchor "top left")
   :stacking "fg"
-  :monitor 2
+  :monitor 0
   (sidebar))
 
 

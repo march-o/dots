@@ -11,8 +11,8 @@ function exportPrimary(){
     fi
     # for display id run: 'hyprctl monitors'
     # id of your primary screen: ()
-    primary_monitor_id=$(head -1 $temp_folder/primary_screen)
-    
+    primary_monitor_id=2
+
     # all available monitors
     NB_MONITORS=($(hyprctl monitors -j | jq -r '.[] | .id'))
     # check if monitor is available
