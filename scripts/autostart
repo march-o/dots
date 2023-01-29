@@ -4,6 +4,9 @@
 config=$HOME/.hyprconfig
 scripts=$config/scripts
 
+# polkit
+# polkit-dumb-agent &
+
 # notification daemon
 dunst &
 
@@ -23,7 +26,7 @@ wl-paste --watch cliphist store &
 ## make kde connect work  (source: https://www.reddit.com/r/kde/comments/l6t6qu/please_make_kdeconnectcli_work_in_headless_moded/)
 /usr/lib/kdeconnectd -platform offscreen & 
 ## Gnome authentication
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+/usr/lib/polkit-dumb-agent/polkit-dumb-agent-responder &
 
 # ... this might not be necessary anymore ? idk
 dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &
