@@ -5,7 +5,7 @@ config=$HOME/.hyprconfig
 scripts=$config/scripts
 
 # polkit
-# polkit-dumb-agent &
+polkit-dumb-agent &
 
 # notification daemon
 dunst &
