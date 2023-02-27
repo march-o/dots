@@ -13,6 +13,9 @@ dunst &
 # screen_sharing 
 pipewire &
 
+# launch main apps
+$scripts/autolaunch_on_workspace &
+
 # screen locking when idle
 $scripts/default/idle_handler &
 
