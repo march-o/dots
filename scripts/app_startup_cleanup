@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+sleep 10
+
+hyprctl keyword windowrule "unset,discord"
+hyprctl keyword windowrulev2 "unset,class:^(Spotify)$"
+hyprctl keyword windowrule "unset,kitty"
+hyprctl keyword windowrule "unset,google-chrome"
+hyprctl keyword windowrule "unset,code"
