@@ -4,17 +4,14 @@
 config=$HOME/.hyprconfig
 scripts=$config/scripts
 
-# polkit
-exec-once=/usr/lib/polkit-kde-authentication-agent-1 &
-
 # notification daemon
 dunst &
 
 # screen_sharing 
 pipewire &
 
-# launch main apps
-$scripts/autolaunch_on_workspace &
+# cleanup launched main apps
+$scripts/app_startup_cleanup &
 
 # screen locking when idle
 $scripts/default/idle_handler &
